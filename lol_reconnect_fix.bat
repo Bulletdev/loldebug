@@ -21,7 +21,7 @@ echo [1/5] Encerrando processos do LoL...
 set PROCS=LeagueClient.exe LeagueClientUx.exe LeagueClientUxRender.exe "League of Legends.exe" RiotClientServices.exe RiotClientUx.exe RiotClientUxRender.exe
 
 for %%P in (%PROCS%) do (
-    taskkill /F /IM %%P /T >nul 2>&1
+    taskkill /F /IM "%%P" /T >nul 2>&1
 )
 echo     OK - Processos encerrados.
 
